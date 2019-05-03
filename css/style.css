@@ -295,6 +295,7 @@ figure{
     display: inline-block;
     vertical-align: top;
     margin: 0;
+    height: 244px;
 }
 
 
@@ -304,6 +305,8 @@ figure img{
     transition: all 0.5s linear;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
 }
 
 figure:hover figcaption{
