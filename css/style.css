@@ -1,0 +1,442 @@
+@font-face {
+    font-family:quartz;
+    src: url(../include/quarz.otf) format("opentype");
+}
+@font-face {
+    font-family:firefly;
+    src: url(../include/firefly.otf) format("opentype");
+}
+header .title-bar{
+    background-color: rgba(54, 57, 61, 0.64);
+}
+
+header .top-bar{
+    background-color: rgba(54, 57, 61, 0.64);
+}
+
+header .top-bar ul{
+    background-color: inherit;
+    margin: 1em;
+}
+
+header a{
+    color: #FFFFFF;
+    font-family: quartz, serif;
+    font-size: 1.5em;
+    font-weight: 400;
+
+}
+
+header img{
+    max-width: 80%;
+}
+.rowFull{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+.columns , .column{
+    min-height: 1px;
+}
+
+#aboutme #typed{
+    color: #36393D;
+    font-size: 1.5em;
+    font-weight: 400;
+    white-space: pre-line;
+    font-family: firefly,  serif;
+    margin-top: 3em;
+    width: 30em;
+}
+
+#whatIuse{
+    background-color:#FFFFFF;
+}
+#whatIuse p{
+    color:  #39393D;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 2em;
+    white-space: nowrap;
+}
+#whatIuse .columns{
+    height: 100%;
+}
+#whatIuse .rowFull{
+    width: auto;
+    height: auto;
+}
+
+
+
+#works .rowFull{
+    height: auto;
+
+}
+#works .columns{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+#works a {
+    display: block;
+}
+
+footer{
+    background: url(http://res.cloudinary.com/pingidea-ru/image/upload/v1481648913/back_wwkumj.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer i{
+    color: #FFFFFF;
+
+}
+footer .rowFull{
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+#rock{
+    color: #008C00 !important;
+}
+footer h1{
+    font-family: Firefly;
+    font-size: 3em;
+    color: #FFFFFF;
+}
+.effect{
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+.effect:focus{
+    box-shadow: inset 0 100px 0 0 #31302B;
+    color: #FFF;
+    width: 100%;
+}
+header a {
+    color: #FFFFFF !important;
+}
+/*wheel animation*/
+#wheel{
+    -o-animation:spin 4s linear infinite;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-o-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*brain animation*/
+
+@keyframes leaves {
+0% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+}
+100% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+}
+
+#brain {
+    animation: leaves 2s ease-in-out infinite alternate;
+    -webkit-animation: leaves 2s ease-in-out infinite alternate;
+    -moz-animation: leaves 2s ease-in-out infinite alternate;
+    -o-animation: leaves 2s ease-in-out infinite alternate;
+}
+
+/*perccounter*/
+#count {
+    animation: perc 2s ease-in-out infinite alternate;
+    -webkit-animation: perc 2s ease-in-out infinite alternate;
+    -moz-animation: perc 2s ease-in-out infinite alternate;
+    -o-animation: perc 2s ease-in-out infinite alternate;
+}
+@keyframes perc {
+    0% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+    }
+}
+
+/*billboard animation*/
+#billboard{
+    -webkit-animation-name: bill;
+    -moz-animation-name: bill;
+    -o-animation-name: bill;
+    animation-name: bill;
+    -webkit-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+@keyframes bill {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    75% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+}
+@-webkit-keyframes bill {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    75% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+}
+@-moz-keyframes bill {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    75% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+}
+@-o-keyframes bill {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    75% {
+        transform-origin: left bottom;
+        transform: rotate(-30deg);
+
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0deg);
+
+    }
+}
+
+#works .columns{
+    border: none;
+}
+#secrow{
+    height:auto;
+}
+figure{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+
+
+figure img{
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+figure:hover figcaption{
+    background: rgba(255,255,255,0.3);
+}
+
+
+
+figure:hover img{
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+}
+
+
+
+/*rocket animatrion*/
+#rock{
+    -webkit-animation-name: rock;
+    -moz-animation-name: rock;
+    -o-animation-name: rock;
+    animation-name: rock;
+    -webkit-animation-duration: 4.5s;
+    -o-animation-duration:4.5s;
+    -moz-animation-duration: 4.5s;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+@keyframes rock {
+    0% {
+
+        transform: rotate(0deg) translate(0,0);
+
+    }
+    50% {
+
+        transform: rotate(5deg) translate(20px,-20px);
+
+    }
+    75% {
+
+        transform: rotate(-5deg) translate(-20px,20px);
+
+    }
+    100% {
+
+        transform: rotate(0deg) translate(0px,0px);
+
+    }
+}
+@-moz-keyframes rock {
+    0% {
+
+        transform: rotate(0deg) translate(0,0);
+
+    }
+    50% {
+
+        transform: rotate(5deg) translate(20px,-20px);
+
+    }
+    75% {
+
+        transform: rotate(-5deg) translate(-20px,20px);
+
+    }
+    100% {
+
+        transform: rotate(0deg) translate(0px,0px);
+
+    }
+}
+@-o-keyframes rock {
+    0% {
+
+        transform: rotate(0deg) translate(0,0);
+
+    }
+    50% {
+
+        transform: rotate(5deg) translate(20px,-20px);
+
+    }
+    75% {
+
+        transform: rotate(-5deg) translate(-20px,20px);
+
+    }
+    100% {
+
+        transform: rotate(0deg) translate(0px,0px);
+
+    }
+}
+@-webkit-keyframes rock {
+    0% {
+
+        transform: rotate(0deg) translate(0,0);
+
+    }
+    50% {
+
+        transform: rotate(5deg) translate(20px,-20px);
+
+    }
+    75% {
+
+        transform: rotate(-5deg) translate(-20px,20px);
+
+    }
+    100% {
+
+        transform: rotate(0deg) translate(0px,0px);
+
+    }
+}
+#logoblock p{
+    margin-bottom: 0 !important;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#logoblock img{
+    max-width: 7em;
+}
