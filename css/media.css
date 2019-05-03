@@ -14,16 +14,6 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 640px) {
-    figure{
-        height: unset;
-    }
-    
-    
-    
-    figure img{
-        height: unset;
-        width: unset;
-    }
     #typed {
         font-size: 1em;
         text-align: center;
