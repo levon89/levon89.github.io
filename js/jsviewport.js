@@ -48,9 +48,11 @@ $(document).ready(function() {
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 1000,
-        autoScrolling:true,
+        scrollingSpeed: 2000,
+        autoScrolling: false,
+        resetSliders: true,
         fitToSection: false,
+        fitToSectionDelay: 2000,
         //disable when mobile will be ready
         scrollBar: true,
         touchSensitivity: 15,
